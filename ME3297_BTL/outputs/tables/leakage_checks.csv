@@ -1,0 +1,22 @@
+kiem_tra,ket_qua,chi_tiet
+"Đặc trưng trễ ngày đầu của mỗi cặp (team, department) là NaN",đạt,"24 cặp; 4 cột trễ đều NaN ở dòng đầu, không NaN ở các dòng sau; is_first_obs = 1 đúng ở dòng đầu"
+Đặc trưng trễ nhân quả (kiểm tra nhiễu tương lai),đạt,Thay năng suất từ ngày d trở đi bằng nhiễu ngẫu nhiên không làm đổi đặc trưng trễ của các dòng có ngày <= d (5 ngày d thử)
+Không ngày nào xuất hiện ở cả train và test,đạt,train 2015-01-01..2015-02-25 (47 ngày); test 2015-02-26..2015-03-11 (12 ngày)
+"Rolling-origin: mỗi fold validate đứng sau train, không chia ngày",đạt,"5 fold, 6 khối ngày"
+Kịch bản A không chứa incentive/over_time/no_of_style_change/idle_*; không kịch bản nào chứa cột nhãn,đạt,"A: ['targeted_productivity', 'smv', 'no_of_workers', 'week_of_month', 'wip', 'lag1_miss', 'lag1_gap', 'roll5_gap_mean', 'roll5_miss_rate', 'is_first_obs', 'department', 'day', 'team']"
+Hiệu chỉnh sigmoid không rò rỉ: bộ hiệu chỉnh của khối j chỉ fit trên điểm OOF của các khối < j,đạt,khối 1 không có bản hiệu chỉnh; 4 mô hình; test dùng bộ hiệu chỉnh fit trên toàn bộ OOF của train
+Chính sách thiệt hại kỳ vọng được chọn chỉ dựa trên OOF (không dùng test),đạt,chọn 'p' cho RandomForest trên nguồn oof_b2_5; p lệch rõ = True
+Learning curve: mọi dòng huấn luyện đứng trước khối validate cố định,đạt,"m = 5, 10, ... ngày liền trước khối 5 và khối 4"
+"Pipeline fit chỉ trên train (DecisionTree, kịch bản A)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (SVM_RBF, kịch bản A)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (MLP, kịch bản A)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (Logistic, kịch bản A)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (RandomForest, kịch bản A)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (DecisionTree, kịch bản B)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (SVM_RBF, kịch bản B)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (MLP, kịch bản B)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (Logistic, kịch bản B)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+"Pipeline fit chỉ trên train (RandomForest, kịch bản B)",đạt,"mean_ của StandardScaler và median của imputer khớp thống kê train, khác thống kê toàn bộ"
+Không có cờ thiếu trùng lặp (wip_missing/lag_missing); đúng một cờ is_first_obs,đạt,30 đặc trưng sau biến đổi (kịch bản A)
+Cây vẽ (không chuẩn hoá) trùng dự báo với cây cùng tham số trên dữ liệu chuẩn hoá,đạt,tỷ lệ dự báo trùng trên train = 1.0000
+Phiếu cảnh báo: chỉ huấn luyện trên các ngày < D,đạt,"đã sinh 3 phiếu mẫu: 2015-02-26, 2015-03-05, 2015-03-11"

@@ -1,0 +1,23 @@
+nhom,n_dong,n_miss,ty_le_miss
+Toàn bộ,1197,322,0.269006
+Train,943,254,0.269353
+Test,254,68,0.267717
+Bộ phận = finishing,506,204,0.403162
+Bộ phận = sewing,691,118,0.170767
+Tuần trong tháng = 1,360,91,0.252778
+Tuần trong tháng = 2,335,83,0.247761
+Tuần trong tháng = 3,210,71,0.338095
+Tuần trong tháng = 4,248,70,0.282258
+Tuần trong tháng = 5,44,7,0.159091
+Tổ 1 (cả hai bộ phận),105,15,0.142857
+Tổ 2 (cả hai bộ phận),109,27,0.247706
+Tổ 3 (cả hai bộ phận),95,11,0.115789
+Tổ 4 (cả hai bộ phận),105,19,0.180952
+Tổ 5 (cả hai bộ phận),93,25,0.268817
+Tổ 6 (cả hai bộ phận),94,31,0.329787
+Tổ 7 (cả hai bộ phận),96,40,0.416667
+Tổ 8 (cả hai bộ phận),109,49,0.449541
+Tổ 9 (cả hai bộ phận),104,34,0.326923
+Tổ 10 (cả hai bộ phận),100,30,0.3
+Tổ 11 (cả hai bộ phận),88,25,0.284091
+Tổ 12 (cả hai bộ phận),99,16,0.161616

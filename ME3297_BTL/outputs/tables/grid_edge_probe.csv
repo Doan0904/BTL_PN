@@ -1,0 +1,7 @@
+scenario,model,param,edge,value_at_edge,cv_pr_auc_at_edge,value_beyond,cv_pr_auc_beyond,delta
+A,SVM_RBF,clf__C,lower,0.1,0.543522,0.01,0.55004,0.00651829
+A,MLP,clf__hidden_layer_sizes,lower,"(8,)",0.485481,"(4,)",0.504926,0.0194451
+A,Logistic,clf__C,upper,100.0,0.492805,1000.0,0.493541,0.000735543
+B,MLP,clf__hidden_layer_sizes,upper,"(64,)",0.494795,"(128,)",0.519333,0.0245377
+B,MLP,clf__alpha,upper,1.0,0.494795,10.0,0.470524,-0.024271
+B,RandomForest,clf__min_samples_leaf,lower,2,0.589843,1,0.587789,-0.00205368

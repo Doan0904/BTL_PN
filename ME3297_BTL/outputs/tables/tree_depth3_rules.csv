@@ -1,0 +1,8 @@
+leaf,rule,n_train,n_miss,miss_rate_train,p_miss_weighted
+8,roll5_miss_rate > 0.1 AND no_of_workers <= 8.5 AND smv <= 3.92,61,52,0.852459,0.940022
+5,roll5_miss_rate <= 0.1 AND smv > 30.2,14,11,0.785714,0.908644
+9,roll5_miss_rate > 0.1 AND no_of_workers <= 8.5 AND smv > 3.92,91,47,0.516484,0.743428
+11,roll5_miss_rate > 0.1 AND no_of_workers > 8.5 AND lag1_gap <= 0.0376,293,99,0.337884,0.580583
+3,roll5_miss_rate <= 0.1 AND smv <= 30.2 AND wip <= 714,133,26,0.195489,0.397277
+12,roll5_miss_rate > 0.1 AND no_of_workers > 8.5 AND lag1_gap > 0.0376,104,15,0.144231,0.313743
+4,roll5_miss_rate <= 0.1 AND smv <= 30.2 AND wip > 714,247,4,0.0161943,0.0427433

@@ -1,0 +1,7 @@
+lens,model,ranking,policy,source,net_per_day,recall_pooled,precision_pooled,chosen,criterion
+a,RandomForest,p,RandomForest,oof_b2_5,119.132,0.291429,0.548387,True,"lợi ích ròng/ngày ở lăng kính b, k = 3, trên oof_b2_5"
+a,RandomForest,EV,RandomForest_EV,oof_b2_5,1132.78,0.2,0.376344,False,"lợi ích ròng/ngày ở lăng kính b, k = 3, trên oof_b2_5"
+a,RandomForest,EVcal,RandomForest_EVcal,oof_b2_5,1289.37,0.217143,0.408602,False,"lợi ích ròng/ngày ở lăng kính b, k = 3, trên oof_b2_5"
+b,RandomForest,p,RandomForest,oof_b2_5,77.3769,0.291429,0.548387,True,"lợi ích ròng/ngày ở lăng kính b, k = 3, trên oof_b2_5"
+b,RandomForest,EV,RandomForest_EV,oof_b2_5,51.0059,0.217143,0.408602,False,"lợi ích ròng/ngày ở lăng kính b, k = 3, trên oof_b2_5"
+b,RandomForest,EVcal,RandomForest_EVcal,oof_b2_5,61.8558,0.251429,0.473118,False,"lợi ích ròng/ngày ở lăng kính b, k = 3, trên oof_b2_5"

@@ -1,0 +1,30 @@
+kich_ban,nhom,cot
+A,số,targeted_productivity
+A,số,smv
+A,số,no_of_workers
+A,số,week_of_month
+A,wip,wip
+A,trễ,lag1_miss
+A,trễ,lag1_gap
+A,trễ,roll5_gap_mean
+A,trễ,roll5_miss_rate
+A,cờ,is_first_obs
+A,phân loại,department
+A,phân loại,day
+A,phân loại,team
+B,số,targeted_productivity
+B,số,smv
+B,số,no_of_workers
+B,số,week_of_month
+B,số,incentive
+B,số,over_time
+B,số,no_of_style_change
+B,wip,wip
+B,trễ,lag1_miss
+B,trễ,lag1_gap
+B,trễ,roll5_gap_mean
+B,trễ,roll5_miss_rate
+B,cờ,is_first_obs
+B,phân loại,department
+B,phân loại,day
+B,phân loại,team

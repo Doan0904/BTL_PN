@@ -1,0 +1,17 @@
+# Dải phiên bản tương thích (Python 3.11 - 3.13). Để tái lập đúng từng chữ số, dùng requirements-lock.txt (ghim chính xác).
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.11,<2
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+
+# Tải dữ liệu bằng ucimlrepo (tuỳ chọn; get_data.py mặc định tải zip chính thức bằng thư viện chuẩn)
+ucimlrepo>=0.0.7,<1
+
+# Chạy notebook (để mở trong trình duyệt, cài thêm giao diện, ví dụ: pip install notebook, hoặc dùng VS Code)
+ipython>=8.18,<10
+ipykernel>=6.29,<8
+jupyter_client>=8.6,<9
+nbformat>=5.9,<6
+nbclient>=0.10,<1
+nbconvert>=7.16,<8

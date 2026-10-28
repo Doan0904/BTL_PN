@@ -1,0 +1,12 @@
+van_de,do_duoc
+Nhãn department lỗi,"Giá trị thô: {'sweing': 691, 'finishing ': 257, 'finishing': 249}"
+wip thiếu có cấu trúc,"506 dòng (42.3%); thiếu ở finishing: 100%, ở sewing: 0%"
+wip lệch phải,max = 23122; trung vị = 1039; độ lệch = 9.74
+actual_productivity > 1,37 dòng; max = 1.120
+"targeted_productivity < 0,5","30 dòng; giá trị: [0.07, 0.35, 0.4]; tỷ lệ miss ở nhóm này = 0.133"
+no_of_workers không nguyên,140 dòng
+quarter thực chất là tuần trong tháng,"{'Quarter1': 360, 'Quarter2': 335, 'Quarter3': 210, 'Quarter4': 248, 'Quarter5': 44}; tuần 5 (ngày 29-31) có 44 dòng"
+idle_time/idle_men gần như hằng số,idle_time>0: 18 dòng; idle_men>0: 18 dòng
+Tổ-ngày bị thiếu,"1197 dòng so với kỳ vọng 1416 (24 cặp tổ-bộ phận x 59 ngày); số dòng mỗi ngày: min 15, trung vị 20, max 24; ngày đủ 24 dòng: 2"
+Phạm vi thời gian,"2015-01-01 đến 2015-03-11; 59 ngày làm việc; ngày trong tuần có dữ liệu: ['Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wednesday']"
+Dòng trùng / khoá trùng,0 / 0

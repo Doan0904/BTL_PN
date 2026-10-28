@@ -1,0 +1,20 @@
+date,rank,alert,team,department,risk_score,p_miss_cal,expected_damage,damage_unit,reasons,actual_productivity,targeted_productivity,actual_miss
+2015-03-05,1,True,9,finishing,0.761285,0.646644,642.185,sản phẩm,"số công nhân = 8, trung vị train 34; SMV (thời gian chuẩn) = 2.9, trung vị train 15.3; chênh lệch TB 5 ngày trước = -0.171, trung vị train 0",0.453125,0.75,1
+2015-03-05,2,True,12,finishing,0.670109,0.51444,386.501,sản phẩm,"số công nhân = 9, trung vị train 34; chênh lệch TB 5 ngày trước = -0.138, trung vị train 0; tỷ lệ trượt 5 ngày trước = 0.8, trung vị train 0.2",0.868889,0.8,0
+2015-03-05,3,True,2,finishing,0.653221,0.491589,290.416,sản phẩm,"số công nhân = 8, trung vị train 34; bộ phận = finishing; SMV (thời gian chuẩn) = 3.9, trung vị train 15.3",0.950625,0.6,0
+2015-03-05,4,False,11,finishing,0.65171,0.489572,648.26,sản phẩm,"hôm trước trượt (1/0) = 1, trung vị train 0; chênh lệch năng suất hôm trước = -0.195, trung vị train 0; SMV (thời gian chuẩn) = 2.9, trung vị train 15.3",0.927292,0.8,0
+2015-03-05,5,False,4,finishing,0.628212,0.458762,312.983,sản phẩm,"số công nhân = 8, trung vị train 34; bộ phận = finishing; tỷ lệ trượt 5 ngày trước = 0.4, trung vị train 0.2",0.812625,0.7,0
+2015-03-05,6,False,1,finishing,0.609459,0.434952,296.739,sản phẩm,"số công nhân = 8, trung vị train 34; tỷ lệ trượt 5 ngày trước = 0.6, trung vị train 0.2; bộ phận = finishing",0.812625,0.7,0
+2015-03-05,7,False,2,sewing,0.59399,0.415835,360.535,sản phẩm,"chênh lệch năng suất hôm trước = -0.0959, trung vị train 0; hôm trước trượt (1/0) = 1, trung vị train 0; tỷ lệ trượt 5 ngày trước = 0.8, trung vị train 0.2",0.600099,0.6,0
+2015-03-05,8,False,6,sewing,0.561854,0.377636,109.821,sản phẩm,"chênh lệch năng suất hôm trước = -0.418, trung vị train 0; hôm trước trượt (1/0) = 1, trung vị train 0; chênh lệch TB 5 ngày trước = -0.0831, trung vị train 0",0.263694,0.35,1
+2015-03-05,9,False,8,finishing,0.520813,0.331814,609.383,sản phẩm,"bộ phận = finishing; thứ = Thursday; tỷ lệ trượt 5 ngày trước = 0.4, trung vị train 0.2",0.980985,0.8,0
+2015-03-05,10,False,7,sewing,0.460475,0.27034,203.483,sản phẩm,"SMV (thời gian chuẩn) = 30.1, trung vị train 15.3; chênh lệch năng suất hôm trước = 0, trung vị train 0; thứ = Thursday",0.366054,0.8,1
+2015-03-05,11,False,11,sewing,0.458102,0.268063,505.208,sản phẩm,"WIP tồn đầu ca = 455, trung vị train 1.04e+03; thứ = Thursday; chênh lệch TB 5 ngày trước = -0.023, trung vị train 0",0.800702,0.8,0
+2015-03-05,12,False,5,sewing,0.435308,0.246709,174.959,sản phẩm,"WIP tồn đầu ca = 230, trung vị train 1.04e+03; thứ = Thursday; tổ = 5",0.700424,0.7,0
+2015-03-05,13,False,3,finishing,0.375872,0.195386,244.657,sản phẩm,"thứ = Thursday; bộ phận = finishing; SMV (thời gian chuẩn) = 4.6, trung vị train 15.3",0.810111,0.8,0
+2015-03-05,14,False,10,sewing,0.358629,0.181635,139.847,sản phẩm,"chênh lệch năng suất hôm trước = 0, trung vị train 0; chênh lệch TB 5 ngày trước = 0, trung vị train 0; thứ = Thursday",0.700422,0.7,0
+2015-03-05,15,False,3,sewing,0.232898,0.0957565,71.2897,sản phẩm,"WIP tồn đầu ca = 797, trung vị train 1.04e+03; thứ = Thursday; SMV (thời gian chuẩn) = 29.4, trung vị train 15.3",0.800535,0.8,0
+2015-03-05,16,False,9,sewing,0.206246,0.0806214,80.3211,sản phẩm,"thứ = Thursday; số công nhân = 52, trung vị train 34; tổ = 9",0.750396,0.75,0
+2015-03-05,17,False,4,sewing,0.206011,0.0804927,59.4962,sản phẩm,"định mức năng suất = 0.7, trung vị train 0.75; thứ = Thursday; số công nhân = 59, trung vị train 34",0.750051,0.7,0
+2015-03-05,18,False,1,sewing,0.187568,0.0706241,51.317,sản phẩm,"định mức năng suất = 0.7, trung vị train 0.75; thứ = Thursday; số công nhân = 58, trung vị train 34",0.750652,0.7,0
+2015-03-05,19,False,12,sewing,0.172111,0.0627266,53.667,sản phẩm,"thứ = Thursday; WIP tồn đầu ca = 959, trung vị train 1.04e+03; tuần trong tháng = 1, trung vị train 2",0.800402,0.8,0

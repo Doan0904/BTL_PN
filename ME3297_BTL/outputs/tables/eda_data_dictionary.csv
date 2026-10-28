@@ -1,0 +1,23 @@
+cot,y_nghia,don_vi,biet_dau_ca,su_dung,kieu,n_thieu,pct_thieu,n_khac_nhau,min,trung_vi,max
+date,Ngày ghi nhận (định dạng M/D/YYYY),ngày,Có,"Dùng để tạo week_of_month, đặc trưng trễ và tách train/test",ngày,0,0,59,2015-01-01 00:00:00,,2015-03-11 00:00:00
+quarter,Tuần trong tháng do nguồn đặt tên 'Quarter1-5' (không phải quý),nhãn,Có,Không dùng; thay bằng week_of_month (tạo lại từ date),phân loại,0,0,5,,,
+department,Bộ phận: sewing (may) hoặc finishing (hoàn thiện),nhãn,Có,"A, B (one-hot); làm sạch nhãn lỗi (sweing -> sewing, bỏ khoảng trắng thừa)",phân loại,0,0,2,,,
+day,Thứ trong tuần,nhãn,Có,"A, B (one-hot)",phân loại,0,0,6,,,
+team,"Mã tổ 1-12 (biến phân loại, không phải thứ tự)",mã,Có,"A, B (one-hot)",số,0,0,12,1,6.0,12
+targeted_productivity,Năng suất mục tiêu (định mức) do quản lý đặt cho tổ trong ngày,tỷ lệ 0-1,Có,"A, B",số,0,0,9,0.07,0.75,0.8
+smv,Standard Minute Value: thời gian chuẩn để làm một sản phẩm của mã hàng,phút/sản phẩm,Có,"A, B",số,0,0,70,2.9,15.26,54.56
+wip,Work in progress: số sản phẩm dở dang (chỉ ghi nhận cho sewing),sản phẩm,Có (chỉ sewing),"A, B (điền 0 cho finishing, log1p, chuẩn hoá)",số,506,42.27,548,7.0,1039.0,23122.0
+over_time,Tổng số phút tăng ca của tổ,phút,Không chắc,Chỉ kịch bản B (độ nhạy),số,0,0,143,0,3960.0,25920
+incentive,Tiền thưởng tài chính cho tổ,BDT,Không chắc (có thể trả theo kết quả),Chỉ kịch bản B (độ nhạy); rủi ro rò rỉ chính,số,0,0,48,0,0.0,3600
+idle_time,Thời gian sản xuất bị gián đoạn,phút,Không (phát sinh trong ngày),Loại khỏi mọi kịch bản,số,0,0,12,0.0,0.0,300.0
+idle_men,Số công nhân ngừng việc do gián đoạn,người,Không (phát sinh trong ngày),Loại khỏi mọi kịch bản,số,0,0,10,0,0.0,45
+no_of_style_change,Số lần đổi mã hàng trong ngày,lần,Gần như có (theo kế hoạch),Chỉ kịch bản B (độ nhạy),số,0,0,3,0,0.0,2
+no_of_workers,"Số công nhân của tổ (có thể lẻ, ví dụ 30,5)",người,Có (theo kế hoạch nhân sự),"A, B",số,0,0,61,2.0,34.0,89.0
+actual_productivity,Năng suất thực tế (nguồn của nhãn),"tỷ lệ 0-1,1",Không,Chỉ để tạo nhãn và đặc trưng trễ,số,0,0,879,0.233705476,0.773333333,1.1204375
+miss,Nhãn: 1 nếu actual < targeted,0/1,Biết cuối ngày,Biến mục tiêu,số,0,0,2,0,0.0,1
+gap,actual - targeted (âm là hụt định mức),tỷ lệ,Biết cuối ngày,"Chỉ để tạo nhãn, đặc trưng trễ và thiệt hại",số,0,0,921,-0.561958333,0.0005052630000000891,0.644375
+week_of_month,"Tuần trong tháng tạo từ date: 1-7 -> 1, ..., 29-31 -> 5",1-5,Có,"A, B",số,0,0,5,1,2.0,5
+lag1_miss,Tổ-bộ phận có trượt ở ngày làm việc trước đó không,0/1,Có,"A, B",số,24,2.01,2,0.0,0.0,1.0
+lag1_gap,Chênh lệch năng suất ở ngày làm việc trước,tỷ lệ,Có,"A, B",số,24,2.01,905,-0.561958333,0.0005110680000000034,0.644375
+roll5_gap_mean,Trung bình chênh lệch năng suất 5 ngày làm việc trước,tỷ lệ,Có,"A, B",số,24,2.01,1124,-0.35961429759999997,0.0004347533999999875,0.5336447811999999
+roll5_miss_rate,Tỷ lệ trượt trong 5 ngày làm việc trước,tỷ lệ 0-1,Có,"A, B",số,24,2.01,11,0.0,0.2,1.0

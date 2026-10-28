@@ -1,0 +1,6 @@
+model,rank_cv_pr_auc,cv_pr_auc_mean,cv_pr_auc_std,has_probability,params,is_main,is_policy_model
+RandomForest,1,0.574472,0.122755,True,"{'clf__max_depth': 4, 'clf__min_samples_leaf': 3}",True,True
+SVM_RBF,2,0.543522,0.102731,False,"{'clf__C': 0.1, 'clf__gamma': 'scale'}",False,False
+DecisionTree,3,0.503012,0.0898583,True,"{'clf__max_depth': 4, 'clf__min_samples_leaf': 10}",False,False
+Logistic,4,0.492805,0.100119,True,{'clf__C': 100.0},False,False
+MLP,5,0.485481,0.0694254,True,"{'clf__alpha': 0.1, 'clf__hidden_layer_sizes': (8,)}",False,False
